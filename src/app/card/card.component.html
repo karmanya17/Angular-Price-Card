@@ -1,0 +1,47 @@
+
+          <div class="card mb-5 mb-lg-0">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">{{planData.planTitle}}</h5>
+              <h6 class="card-price text-center">${{planData.price}}<span class="period">/{{planData.period}}</span></h6>
+              <hr>
+              <ul class="fa-ul">
+                <li [ngClass]="{'text-muted':!planData.user.active}">
+                  <span class="fa-li">
+                  <i [ngClass]="{'fa-times':!planData.user.active,'fa-check':planData.user.active,fa:true}"></i>
+                </span>{{planData.user.userAllowed}}</li>
+                <li [ngClass]="{'text-muted':!planData.storage.active}">
+                  <span class="fa-li">
+                  <i [ngClass]="{'fa-times':!planData.storage.active,'fa-check':planData.storage.active,fa:true}"></i>
+                </span>{{planData.storage.size}}GB Storage</li>
+                <li [ngClass]="{'text-muted':!planData.publicProject.active}">
+                  <span class="fa-li">
+                  <i [ngClass]="{'fa-times':!planData.publicProject.active,'fa-check':planData.publicProject.active,fa:true}"></i>
+                </span>{{planData.publicProject.publicProjectAllowed}} Public Projects</li>
+                <li [ngClass]="{'text-muted':!planData.communityAccess.active}">
+                  <span class="fa-li">
+                  <i [ngClass]="{'fa-times':!planData.communityAccess.active,'fa-check':planData.communityAccess.active,fa:true}"></i>
+                  </span>{{planData.communityAccess.communityAccess}}</li>
+                <li [ngClass]="{'text-muted':!planData.UnlimitedPrivateProject.active}" >
+                  <span class="fa-li">
+                  <i [ngClass]="{'fa-times':!planData.UnlimitedPrivateProject.active,'fa-check':planData.UnlimitedPrivateProject.active,fa:true}"></i>
+                </span>{{planData.UnlimitedPrivateProject.PPAllowed}} Private Projects</li>
+                <li [ngClass]="{'text-muted':!planData.phoneSupprt.active}">
+                  <span class="fa-li">
+                  <i [ngClass]="{'fa-times':!planData.phoneSupprt.active,'fa-check':planData.phoneSupprt.active,fa:true}"></i>
+                </span>{{planData.phoneSupprt.phoneSupportAllowed}} Phone Support</li>
+                <li [ngClass]="{'text-muted':!planData.subdomain.active}">
+                  <span class="fa-li">
+                  <i [ngClass]="{'fa-times':!planData.subdomain.active,'fa-check':planData.subdomain.active,fa:true}"></i>
+                </span>{{planData.subdomain.subdomainAllowed}} Subdomain</li>
+                <li [ngClass]="{'text-muted':!planData.statusReport.active}">
+                  <span class="fa-li">
+                  <i [ngClass]="{'fa-times':!planData.statusReport.active,'fa-check':planData.statusReport.active,fa:true}"></i>
+                </span>{{planData.statusReport.reportPeriod}} Status Reports</li>
+              </ul>
+              <div class="d-grid">
+                <a href="#" class="btn btn-primary text-uppercase">Button</a>
+              </div>
+            </div>
+          </div>
+          
+        
