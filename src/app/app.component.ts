@@ -14,6 +14,7 @@ export class AppComponent {
       price:0,
       period:"month",
       user:{
+        bold:false,
         userAllowed:"Single User",
         active:true
       },
@@ -38,6 +39,7 @@ export class AppComponent {
         active:false
       },
       subdomain:{
+        bold:false,
         subdomainAllowed:"Free",
         active:false
       },
@@ -51,6 +53,7 @@ export class AppComponent {
       price:9,
       period:"month",
       user:{
+        bold:true,
         userAllowed:"5 Users",
         active:true
       },
@@ -75,6 +78,7 @@ export class AppComponent {
         active:true
       },
       subdomain:{
+        bold:false,
         subdomainAllowed:"Free",
         active:true
       },
@@ -89,6 +93,7 @@ export class AppComponent {
       price:49,
       period:"month",
       user:{
+        bold:true,
         userAllowed:"Unlimited Users",
         active:true
       },
@@ -113,7 +118,8 @@ export class AppComponent {
         active:true
       },
       subdomain:{
-        subdomainAllowed:"Free",
+        bold:true,
+        subdomainAllowed:"Unlimited Free",
         active:true
       },
       statusReport:{

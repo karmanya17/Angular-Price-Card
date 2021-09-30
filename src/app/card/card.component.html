@@ -5,7 +5,7 @@
               <h6 class="card-price text-center">${{planData.price}}<span class="period">/{{planData.period}}</span></h6>
               <hr>
               <ul class="fa-ul">
-                <li [ngClass]="{'text-muted':!planData.user.active}">
+                <li [ngClass]="{'text-muted':!planData.user.active,'bold':planData.user.bold}">
                   <span class="fa-li">
                   <i [ngClass]="{'fa-times':!planData.user.active,'fa-check':planData.user.active,fa:true}"></i>
                 </span>{{planData.user.userAllowed}}</li>
@@ -32,7 +32,7 @@
                 <li [ngClass]="{'text-muted':!planData.subdomain.active}">
                   <span class="fa-li">
                   <i [ngClass]="{'fa-times':!planData.subdomain.active,'fa-check':planData.subdomain.active,fa:true}"></i>
-                </span>{{planData.subdomain.subdomainAllowed}} Subdomain</li>
+                </span><span [ngClass]="{'bold':planData.subdomain.bold}">{{planData.subdomain.subdomainAllowed}}</span> Subdomain</li>
                 <li [ngClass]="{'text-muted':!planData.statusReport.active}">
                   <span class="fa-li">
                   <i [ngClass]="{'fa-times':!planData.statusReport.active,'fa-check':planData.statusReport.active,fa:true}"></i>
@@ -43,5 +43,4 @@
               </div>
             </div>
           </div>
-          
-        
+  

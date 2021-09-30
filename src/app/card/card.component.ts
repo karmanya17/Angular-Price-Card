@@ -11,6 +11,7 @@ export class CardComponent implements OnInit {
       price:0,
       period:"month",
       user:{
+        bold:true,
         userAllowed:"Single User",
         active:true
       },
@@ -28,15 +29,16 @@ export class CardComponent implements OnInit {
       },
       UnlimitedPrivateProject:{
         PPAllowed:"Unlimited",
-        active:true
+        active:false
       },
       phoneSupprt:{
         phoneSupportAllowed:"Dedicated",
-        active:true
+        active:false
       },
       subdomain:{
+        bold:false,
         subdomainAllowed:"Free",
-        active:true
+        active:false
       },
       statusReport:{
         reportPeriod:"Monthly",

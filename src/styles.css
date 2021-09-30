@@ -49,6 +49,9 @@ section.pricing {
     transition: all 0.2s;
   }
   
+  .bold{
+    font-weight: bold;
+  }
   /* Hover Effects on Card */
   
   @media (min-width: 992px) {
